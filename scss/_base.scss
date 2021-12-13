@@ -1,0 +1,46 @@
+:root {
+  --clr-white: #fff;
+  --clr-gray-1: #333;
+  --clr-gray-2: #4f4f4f;
+  --clr-gray-3: #bdbdbd;
+  --clr-primary: #ff6d5b;
+
+  --family-spaceMono: Space Mono;
+  --family-inconsolata: Inconsolata;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: var(--clr-gray-1);
+  color: var(--clr-white);
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: var(--family-spaceMono);
+}
+
+body {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
